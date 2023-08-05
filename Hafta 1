@@ -1,0 +1,26 @@
+//İrem Nur Pirinççi
+//Hafta 1 Challenge
+
+import java.util.Calendar;
+import java.util.Scanner;
+
+public class YasHesaplama {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int dogumYili, yas;
+
+        Calendar suan = Calendar.getInstance();
+        int suAnkiYil = suan.get(Calendar.YEAR);
+
+        System.out.print("Doğum yılınızı girin: ");
+        dogumYili = scanner.nextInt();
+
+        yas = suAnkiYil - dogumYili;
+
+        System.out.println("Yaşınız: " + yas);
+
+        scanner.close();
+    }
+}
+
+
